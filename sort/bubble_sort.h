@@ -13,6 +13,13 @@
 
 namespace algo {
 
+/**
+ * @brief Bubble sort
+ *
+ * @tparam ValueType Value type template
+ * @param nums[] The input array to be sorted.
+ * @param size Size of the input array, i.e., size of nums.
+ */
 template<typename ValueType>
 void BubbleSort(ValueType nums[], size_t size) {
   bool swap_flag = false;
