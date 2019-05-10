@@ -21,7 +21,7 @@ namespace algo {
  * @param size Size of the input array, i.e., size of nums.
  */
 template<typename ValueType>
-void BubbleSort(ValueType nums[], size_t size) {
+void BubbleSort(ValueType nums[], const size_t size) {
   bool swap_flag = false;
   for (size_t i = 0; i < size; ++i) {
     swap_flag = false;
