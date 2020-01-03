@@ -5,10 +5,10 @@
  * @version 0.1
  * @date 2019-05-09
  */
-#include "random.h"
+
+#include "util/random.h"
 
 #include <cassert>
-#include <cstdlib>
 
 namespace algo {
 namespace common {

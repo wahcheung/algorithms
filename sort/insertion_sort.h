@@ -5,20 +5,19 @@
  * @version 0.1
  * @date 2019-05-10
  */
+
 #ifndef SORT_INSERTION_SORT_
 #define SORT_INSERTION_SORT_
 
-#include <cstddef>
-#include <utility>
 #include "util/print.h"
 
 namespace algo {
 
 template<typename ValueType>
-void InsertionSort(ValueType nums[], const size_t size) {
-  for (size_t i = 1; i < size; ++i) {
+void InsertionSort(ValueType nums[], const int size) {
+  for (int i = 1; i < size; ++i) {
     ValueType cur = nums[i];
-    size_t j = i;
+    int j = i;
     while (j > 0 && cur < nums[j - 1]) {
       nums[j] = nums[j - 1];
       --j;

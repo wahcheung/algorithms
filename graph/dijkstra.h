@@ -4,6 +4,7 @@
  * @version 0.1
  * @date 2020-01-02
  */
+
 #ifndef GRAPH_DIJKSTRA_H_
 #define GRAPH_DIJKSTRA_H_
 

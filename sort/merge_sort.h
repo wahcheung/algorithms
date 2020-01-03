@@ -5,10 +5,10 @@
  * @version 0.1
  * @date 2019-05-21
  */
+
 #ifndef SORT_MERGE_SORT_H_
 #define SORT_MERGE_SORT_H_
 
-#include <cstddef>
 #include "util/print.h"
 
 namespace algo {
@@ -17,9 +17,9 @@ namespace algo {
  * @brief Merge two sorted parts of an array, i.e., [left, mid) and [mid, right)
  */
 template<typename ValueType>
-void Merge(ValueType nums[], const size_t left, const size_t mid, const size_t right) {
+void Merge(ValueType nums[], const int left, const int mid, const int right) {
   ValueType merge_nums[right - left];
-  size_t pos = 0, lpos = left, rpos = mid;
+  int pos = 0, lpos = left, rpos = mid;
   while (lpos < mid && rpos < right) {
     if (nums[lpos] <= nums[rpos]) {
       merge_nums[pos] = nums[lpos];
@@ -40,7 +40,7 @@ void Merge(ValueType nums[], const size_t left, const size_t mid, const size_t r
     ++rpos;
     ++pos;
   }
-  for (size_t i = left; i < right - left; ++i) {
+  for (int i = left; i < right - left; ++i) {
     nums[i] = merge_nums[i];
   }
 }
@@ -53,11 +53,11 @@ void Merge(ValueType nums[], const size_t left, const size_t mid, const size_t r
  * @param size Size of the input array, i.e., size of nums.
  */
 template<typename ValueType>
-void MergeSort(ValueType nums[], const size_t size) {
+void MergeSort(ValueType nums[], const int size) {
   if (size <= 1) {
     return;
   }
-  size_t mid = size / 2;
+  int mid = size / 2;
   MergeSort(nums, mid);
   MergeSort(&nums[mid], size - mid);
   Merge(nums, 0, mid, size);

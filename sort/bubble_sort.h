@@ -5,10 +5,10 @@
  * @version 0.1
  * @date 2019-05-09
  */
+
 #ifndef SORT_BUBBLE_SORT_H_
 #define SORT_BUBBLE_SORT_H_
 
-#include <cstddef>
 #include <utility>
 
 namespace algo {
@@ -21,11 +21,11 @@ namespace algo {
  * @param size Size of the input array, i.e., size of nums.
  */
 template<typename ValueType>
-void BubbleSort(ValueType nums[], const size_t size) {
+void BubbleSort(ValueType nums[], const int size) {
   bool swap_flag = false;
-  for (size_t i = 0; i < size; ++i) {
+  for (int i = 0; i < size; ++i) {
     swap_flag = false;
-    for (size_t j = size - 1; j > i; --j) {
+    for (int j = size - 1; j > i; --j) {
       if (nums[j] < nums[j - 1]) {
         std::swap(nums[j], nums[j - 1]);
         swap_flag = true;

@@ -5,7 +5,7 @@
  * @date 2020-01-03
  */
 
-#include "dijkstra.h"
+#include "graph/dijkstra.h"
 
 #include <climits>
 #include <vector>

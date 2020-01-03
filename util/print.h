@@ -5,10 +5,10 @@
  * @version 0.1
  * @date 2019-05-09
  */
+
 #ifndef UTIL_PRINT_H_
 #define UTIL_PRINT_H_
 
-#include <cstddef>
 #include <iostream>
 #include <vector>
 

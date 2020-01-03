@@ -5,6 +5,7 @@
  * @version 0.1
  * @date 2019-05-09
  */
+
 #ifndef UTIL_RANDOM_H_
 #define UTIL_RANDOM_H_
 
